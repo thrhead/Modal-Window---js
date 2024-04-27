@@ -21,9 +21,8 @@ overlay.addEventListener('click', closeModal);
 
 // keyboard escape "esc"
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') {
-    if (!modal.classList.contains('hidden')) {
-      closeModal();
-    }
+  if (e.key === 'Escape' && !modal.classList.contains('hidden') ) {
+    closeModal();
+    
   }
 });
